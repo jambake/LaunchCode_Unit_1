@@ -59,6 +59,16 @@ public class MethodPractice {
 		return count;	
 	}
 	
+	
+	public static int[] callie(int[] a, int[] b) {
+		int[] c = new int[a.length];
+		for (int i = 0; i < a.length; i++) {
+			c[i] = a[i] + b[i];
+		}
+		return c;
+	}
+		
+		
 	public static void main(String[] args) 
 	{
 
@@ -72,12 +82,14 @@ public class MethodPractice {
 		//boolean even = isEven(25);
 		//System.out.println(even);
 
-		int[] a = {1, 2, 3};
+		/*int[] a = {1, 2, 3};
 		int[] b = {1, 2, 3};
 		boolean same = sameArray(a, b);
-		System.out.println(same);
+		System.out.println(same);*/
 		
 		//System.out.println(letterCount("google", 'o'));
+		
+		int[] c = callie(new int[]{1, 2, 3}, new int[]{4, 5, 6});
+		System.out.println(c[0] + " " + c[1] + " " + c[2]);
 	}
-
 }

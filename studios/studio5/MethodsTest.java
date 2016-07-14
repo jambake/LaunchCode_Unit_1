@@ -15,6 +15,8 @@ public class MethodsTest {
 		//
 		// Try something fancier
 		//
+		assertEquals(-5, Methods.sum(-3, -2));
+		
 		for (int i=0; i < 10; ++i) {
 			assertEquals(i+i, Methods.sum(i, i));
 		}
@@ -22,8 +24,8 @@ public class MethodsTest {
 	
 	@Test
 	public void thisTestShouldFail() {
-		assertEquals(1, Methods.mpy(0,3));
-		assertEquals(1, Methods.mpy(2, 5));
+		assertEquals(0, Methods.mpy(0,3));
+		assertEquals(10, Methods.mpy(2, 5));
 	}
 	
 	@Test
@@ -45,6 +47,11 @@ public class MethodsTest {
 	@Test
 	public void testAverage() {
 		assertEquals(0.5, Methods.average(new double[] { 0, 1 }), 0.1);
+	}
+	
+	@Test
+	public void callie() {
+		assertEquals(new int[]{5, 7, 9}, Methods.callie(new int[]{1, 2, 3}, new int[]{4, 5, 6}));
 	}
 
 }
