@@ -68,6 +68,7 @@ public class MethodPractice {
 		return c;
 	}
 		
+	
 		
 	public static void main(String[] args) 
 	{
