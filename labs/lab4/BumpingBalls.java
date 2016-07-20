@@ -13,6 +13,7 @@ public class BumpingBalls {
 		int numBall = ap.nextInt("How many bouncing balls?");
 		int numTimes = ap.nextInt("How many times to loop?");
 
+		
 		for (int i = 0; i < numTimes; i++) {
 			for (int j = 0; j < numBall; j++) {
 			
