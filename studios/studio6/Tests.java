@@ -17,6 +17,10 @@ public class Tests {
 	public void testFib() {
 		assertEquals(0, Methods.fib(0));
 		assertEquals(1, Methods.fib(1));
+		assertEquals(1, Methods.fib(2));
+		assertEquals(2, Methods.fib(3));
+		assertEquals(3, Methods.fib(4));
+		assertEquals(5, Methods.fib(5));
 		assertEquals(144, Methods.fib(12));
 	}
 	

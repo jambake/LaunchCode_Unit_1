@@ -25,16 +25,16 @@ public class GraphPaper {
 		StdDraw.line(llx, lly+size/2, llx+size, lly+size/2); // horizontal
 		StdDraw.line(llx+size/2, lly, llx+size/2, lly+size); // vertical
 		// 
-		// Now, after you have drown athose two lines,
+		// Now, after you have drown those two lines,
 		// let's pause to accentuate the recursive drama
 		//
 		//StdDraw.pause(20);
 		//
 		//
 		// Now recursively consider the
-		//   lower left, uppert left, upper right, lower right
-		//   subcases
-		//   Your code for those subcases should go below here:
+		//   lower left, upper left, upper right, lower right
+		//   sub-cases
+		//   Your code for those sub-cases should go below here:
 		//
 		gp(llx,lly,size/2); // lower left 
 		gp(llx, lly+size/2, size/2); // upper left
@@ -50,9 +50,9 @@ public class GraphPaper {
 		//   calls below to StdDraw.show
 		//   and that will speed up what you see greatly
 		//
-		StdDraw.show(10);  // don't show anything
+		//StdDraw.show(10);  // don't show anything
 		gp(0, 0, 1);
-		StdDraw.show(10);  // until now
+		//StdDraw.show(10);  // until now
 
 	}
 
