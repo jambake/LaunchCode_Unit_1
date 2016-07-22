@@ -82,8 +82,4 @@ public class Methods {
 			return mult(a, b-b) + a*b;
 		}
 	}
-	
-	public static void main(String[] args) {
-		System.out.println(sumDownBy2(6));
-	}
 }
