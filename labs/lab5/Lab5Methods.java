@@ -10,9 +10,9 @@ public class Lab5Methods {
 		}
 		return sum;
 	}
-	
+
 	public static double harmonicSum(int n) {
-		
+
 		double sum = 0.0;
 		while (n > 0) {
 			sum = sum + (1.0/n);
@@ -20,7 +20,7 @@ public class Lab5Methods {
 		}
 		return sum;
 	}
-	
+
 	public static double geometricSum(int k) {
 		double sum = 0.0;
 		while (k >= 0) {
@@ -29,7 +29,7 @@ public class Lab5Methods {
 		}
 		return sum;
 	}
-	
+
 	public static int multPos(int j, int k) {
 		int sum = 0; 
 		for (int i = 0; i < k; i++) {
@@ -37,8 +37,8 @@ public class Lab5Methods {
 		}
 		return sum;
 	}
-	
-	
+
+
 	public static int mult(int j, int k) {
 		if (j == 0 && k == 0) {
 			return 0;
@@ -50,19 +50,19 @@ public class Lab5Methods {
 			return -multPos(Math.abs(j), Math.abs(k));
 		}
 	}
-	
+
 	public static int expt(int n, int k) {
 		if (k < 0) {
 			return 0;
 		}
 		int sum = 0;
 		for (int i = 0; i < k; i++) {
-			
+
 		}
 	}
-	
-	
-	
+
+
+
 	public static void main(String[] args) {
 		System.out.println(mult(-6, -2));
 	}

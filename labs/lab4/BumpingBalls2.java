@@ -43,12 +43,18 @@ public class BumpingBalls2 {
 				StdDraw.filledCircle(rxs[j],  rys[j],  radius);
 
 				//balls bounce off walls
-				if (Math.abs(rxs[j] + vxs[j]) > 1.0 - radius) vxs[j] = -vxs[j];
-				if (Math.abs(rys[j] + vys[j]) > 1.0 - radius) vys[j] = -vys[j];
+				if (Math.abs(rxs[j] + vxs[j]) > 1.0 - radius) {
+					vxs[j] = -vxs[j];
+				}
+				if (Math.abs(rys[j] + vys[j]) > 1.0 - radius) {
+					vys[j] = -vys[j];
+				}
 
 				// loop for balls bouncing off each other 
+				// pythagoreon theory?
 				for (int m = j + 1; m < numBall; m++) {
-					if (Math.sqrt(Math.pow(rxs[m]-rxs[j], 2) + Math.pow(rys[m]-rys[j], 2)) <= radius + radius) { 
+					//if (Math.sqrt(Math.pow(rxs[m]-rxs[j], 2) + Math.pow(rys[m]-rys[j], 2)) <= radius + radius) { 
+					if ( (Math.abs(rxs[j] - rxs[m]) < (radius + radius)) && (Math.abs(rys[j] - rys[m]) < (radius + radius)) ) {
 
 						vxs[j] = -vxs[j]; 
 						vys[j] = -vys[j];

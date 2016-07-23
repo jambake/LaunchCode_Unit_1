@@ -29,6 +29,7 @@ public class Dice2 {
 		int diceNum;
 		int count = 0;
 		int sum = 0;
+		//int same = 0;
 
 		int[] diceThrown = new int[D];
 		for (int j = 0; j < T; j++) {
@@ -67,25 +68,33 @@ public class Dice2 {
 				System.out.print(diceThrown[i] + "|");
 			}
 			System.out.println();
-			
+
 			// Sum of each dice roll
 			for (int m = 0; m < D; m++) {
 				sum = diceThrown[m] + sum; 
 			} 
 			System.out.println("Dice added together = " + sum);
 			sum = 0;	
-			
-			// How many times the dice match per each roll
+		}
+
+		// How many times the dice match per each roll
+		int allEqual = 0;
+		for (int m = 0; m < T; m++) {
 			for (int n = 0; n < D; n++) {
-				if (diceThrown[0] == diceThrown[n]) {
-				} else {
+				if (diceThrown[0] != diceThrown[n]) {
 					count++;
-				}
+				} //else {
+					//count++;
+				//}
+				if (count == D) {
+				allEqual = allEqual + 1;
+			}
 			}
 		}
 		System.out.println();
-		if (T-count > 0) {
-			System.out.println(T-count + " out of " + T + " times the dice matched, which is " + ((double)(T-count)/T)*100 + "% of the time.");
+		System.out.println("COUNT: " + allEqual);
+		if (T-allEqual > 0) {
+			System.out.println(allEqual + " out of " + T + " times the dice matched, which is " + ((double)(allEqual)/T)*100 + "% of the time.");
 		} else {
 			System.out.println("All dice thrown in one iteration never matched.");
 		}
