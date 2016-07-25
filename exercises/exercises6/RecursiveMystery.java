@@ -1,7 +1,5 @@
 package exercises6;
 
-import sedgewick.StdOut;
-
 public class RecursiveMystery
 {
 	/*
@@ -46,19 +44,38 @@ public class RecursiveMystery
 	 * BROKEN
 	 */
 	public static void mystery2(int a, int b) {
-		a = 0;
-		b = 8;
 		if (a != b) {
 			int m = (a + b) / 2;
 			mystery2(a, m);
 			System.out.println(m);
-			mystery2(m,b);
+			//mystery2(m,b); BROKEN
+		}
+	}
+	
+	/*
+	 * mystery3(0, 8) = mystery3(0, 3) (m = 4)
+	 * 		   (0, 3) = 		(0, 0) (m = 1)
+	 * mystery3(0, 0) = done
+	 * print 1
+	 * mystery3(2, 3) = mystery3(2, 1) (m = 2)
+	 * 		   (2, 1) = 		(2, 0) (m = 1)
+	 * mystery3(2, 0) =	mystery3(2, 0) (m = 1)
+	 * mystery3(2, 0) =	mystery3(2, 0) (m = 1)
+	 * mystery3(2, 0) =	mystery3(2, 0) (m = 1)
+	 * mystery3(2, 0) =	mystery3(2, 0) (m = 1) BROKEN
+	 */
+	public static void mystery3(int a, int b) {
+		if (a != b) {
+			int m = (a + b) / 2;
+			mystery3(a, m - 1);
+			System.out.println(m);
+			//mystery3(m + 1, b); BROKEN
 		}
 	}
 
 	public static void main(String[] args)
 	{
-		mystery2(0, 8);
+		mystery3(0, 8);
 	}
 
 }

@@ -28,7 +28,7 @@ public class GraphPaper {
 		// Now, after you have drown those two lines,
 		// let's pause to accentuate the recursive drama
 		//
-		//StdDraw.pause(20);
+		StdDraw.pause(20);
 		//
 		//
 		// Now recursively consider the
