@@ -38,7 +38,7 @@ public class BumpingBalls2 {
 			for (int j = 0; j < numBall; j++) {
 
 				//draw balls
-				double radius = 0.1;
+				double radius = 0.001;
 				StdDraw.setPenColor(Color.BLUE);
 				StdDraw.filledCircle(rxs[j],  rys[j],  radius);
 

@@ -83,16 +83,23 @@ public class Lab5Methods {
 	 * @param k exponential input
 	 * @return result of n^k
 	 */
-	public static int expt(int n, int k) {
-		int sum = 0;
-		if (k < 0) {
+	public static int expt(int n, int k) 
+	{
+		int sum = n;
+		if (k < 0) 
+		{
 			return 0;
-		} else if (k == 0) {
+		} 
+		if (k == 0) 
+		{
 			return 1;
-		} else {
-			sum = n;
-		}
-		for (int i = 0; i < k - 1; i++) {
+		} 
+		//else 
+		//{
+		//sum = n;
+		//}
+		for (int i = 1; i < k; i++) 
+		{
 			sum = sum * n;
 		}
 		return sum;
@@ -101,6 +108,6 @@ public class Lab5Methods {
 
 
 	public static void main(String[] args) {
-	
+
 	}
 }

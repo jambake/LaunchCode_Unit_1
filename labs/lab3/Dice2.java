@@ -81,25 +81,29 @@ public class Dice2 {
 		int allEqual = 0;
 		for (int m = 0; m < T; m++) {
 			for (int n = 0; n < D; n++) {
-				if (diceThrown[0] != diceThrown[n]) {
-					count++;
+				if (diceThrown[0] == diceThrown[n]) {
+					count = count + 1;
 				} //else {
-					//count++;
+				//count++;
 				//}
-				if (count == D) {
+				
+				}
+			if (count == D) {
 				allEqual = allEqual + 1;
-			}
-			}
-		}
+			}	
+			
+	}
 		System.out.println();
-		System.out.println("COUNT: " + allEqual);
-		if (T-allEqual > 0) {
+		System.out.println("All Equal: " + allEqual);
+		System.out.println("COUNT: " + count);
+		//if (allEqual == 0) {
+			//System.out.println("All dice thrown in one iteration never matched.");
+		//} else {
 			System.out.println(allEqual + " out of " + T + " times the dice matched, which is " + ((double)(allEqual)/T)*100 + "% of the time.");
-		} else {
-			System.out.println("All dice thrown in one iteration never matched.");
+			
 		}
 	}
-}
+//}
 
 
 
