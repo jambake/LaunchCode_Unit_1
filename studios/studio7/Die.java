@@ -4,7 +4,7 @@ public class Die
 {
 	private int n, rolls;
 	
-	public Die(int n)
+	public Die(int n, int rolls)
 	{
 		this.n = n;
 		this.rolls = rolls;
@@ -14,7 +14,8 @@ public class Die
 	{
 		for (int i = 0; i < this.rolls; i++)
 		{
-			n = Math.random()
+			n = (int) Math.random();
 		}
+		return n;
 	}
 }
