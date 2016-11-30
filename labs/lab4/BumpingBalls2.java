@@ -38,8 +38,8 @@ public class BumpingBalls2 {
 			for (int j = 0; j < numBall; j++) {
 
 				//draw balls
-				double radius = 0.001;
-				StdDraw.setPenColor(Color.BLUE);
+				double radius = 0.075;
+				StdDraw.setPenColor(Color.DARK_GRAY);
 				StdDraw.filledCircle(rxs[j],  rys[j],  radius);
 
 				//balls bounce off walls
