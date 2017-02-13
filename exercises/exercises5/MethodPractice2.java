@@ -33,11 +33,12 @@ public class MethodPractice2 {
 		}
 	}
 	public static void main(String[] args) {
-		//long result = factorial(18);
-		//System.out.println(result);
-		int[] result = fibo(3);
-		for(int i = 0; i < result.length; i++) {
-			System.out.println(result[i]);
+		long resultFact = factorial(5);
+		System.out.println(resultFact);
+		
+		int[] resultFib = fibo(10);
+		for(int i = 0; i < resultFib.length; i++) {
+			System.out.print(resultFib[i] + " ");
 		}
 	}
 
