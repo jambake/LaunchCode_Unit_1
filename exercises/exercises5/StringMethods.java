@@ -50,6 +50,7 @@ public class StringMethods {
 		for (int i = 0; i<5; i++) {
 		System.out.println(copies("hello ", i));
 		}
+		
 		String s = "I like computer science!";
 		String[] words = s.split(" ");
 		for (String w : words) {
