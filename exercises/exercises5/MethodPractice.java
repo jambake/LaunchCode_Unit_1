@@ -59,6 +59,8 @@ public class MethodPractice {
 		return count;	
 	}
 	
+	// Method that takes in two int arrays and adds each 
+	// of the same index value together
 	
 	public static int[] callie(int[] a, int[] b) {
 		int[] c = new int[a.length];
@@ -71,24 +73,20 @@ public class MethodPractice {
 	
 		
 	public static void main(String[] args) 
-	{
+	{		
+		int ans = remainder(7, 3);
+		System.out.println(ans);
+		
+		boolean even = isEven(25);
+		System.out.println(even);
 
-		//System.out.println(remainder(7,3));
-		
-		//int ans = remainder(7, 3);
-		//System.out.println(ans);
-		
-		//System.out.println(isEven(25));
-		
-		//boolean even = isEven(25);
-		//System.out.println(even);
-
-		/*int[] a = {1, 2, 3};
+		int[] a = {1, 2, 3};
 		int[] b = {1, 2, 3};
 		boolean same = sameArray(a, b);
-		System.out.println(same);*/
+		System.out.println(same);
 		
-		//System.out.println(letterCount("google", 'o'));
+		int count = letterCount("google", 'o');
+		System.out.println(count);
 		
 		int[] c = callie(new int[]{1, 2, 3}, new int[]{4, 5, 6});
 		System.out.println(c[0] + " " + c[1] + " " + c[2]);

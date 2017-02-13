@@ -31,7 +31,7 @@ public class Triangles {
 		StdDraw.setPenColor(Color.BLACK);
 		StdDraw.filledPolygon(x, y);
 		// THEN draw recursive white triangles
-		Thread.sleep(8000);
+		// Thread.sleep(8000);
 		triangle(0, 0, 1);
 
 
